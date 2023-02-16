@@ -1,7 +1,9 @@
 #include<stdio.h>
 
-/*
- * Size of variables
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
