@@ -9,7 +9,7 @@
 int main(void)
 {
 	/*Function for printing fputs */
-	fputs("and that piece of art is useful\"");
+	fputs("and that piece of art is useful\"", stdout);
        	fputs("- Dora Korpar, 2015-10-19", stdout);
 	return (1);
 }
