@@ -1,5 +1,6 @@
 #include<stdio.h>
-/* 
+
+/*
  * Size of variables
  */
 int main(void)
@@ -14,5 +15,5 @@ int main(void)
 	printf("Size of a long int: %lu byte(s)\n", sizeof(longIntType));
 	printf("Size of a long long int: %lu byte(s)\n", sizeof(longLongIntType));
 	printf("Size of a float: %lu byte(s)\n", sizeof(floatType));
-	return 0;
+	return (0);
 }
