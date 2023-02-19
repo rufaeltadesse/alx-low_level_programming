@@ -9,13 +9,14 @@ int main(void)
 {
 	int aa;
 	int bb;
-	int cc=0;
+	int cc = 0;
+
 	while (cc < 10)
 	{
-		bb=0;
+		bb = 0;
 		while (bb < 10)
 		{
-			aa=0;
+			aa = 0;
 			while (aa < 10)
 			{
 				if (aa != bb && bb != cc && cc < bb && bb < aa)
