@@ -23,7 +23,7 @@ int main(void)
 		while (aa2 < 99)
 		{
 			bb2 = (aa2 / 10 + '0');
-			cc2 = (aa2 / 10 + '0');
+			cc2 = (aa2 % 10 + '0');
 
 			if (aa < aa2)
 			{
