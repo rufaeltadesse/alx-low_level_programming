@@ -20,7 +20,7 @@ int main(void)
 		bb1 = (aa / 10 + '0');
 		cc1 = (aa % 10 + '0');
 		aa2 = 0;
-		while (aa2 < 99)
+		while (aa2 <= 99)
 		{
 			bb2 = (aa2 / 10 + '0');
 			cc2 = (aa2 % 10 + '0');
@@ -33,7 +33,7 @@ int main(void)
 				putchar(bb2);
 				putchar(cc2);
 
-				if(aa!=98)
+				if(aa != 98)
 				{
 					putchar(',');
 					putchar(' ');
