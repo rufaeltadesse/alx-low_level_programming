@@ -4,7 +4,7 @@
  * main - Program entry
  * Desc : writes a program which
  * displays list of numbers
- * Returns: 0
+ * Return: 0
  */
 int main(void)
 {
