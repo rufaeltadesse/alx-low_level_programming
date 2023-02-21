@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 /**
- * void times_table -voiid table
+ * times_table -voiid table
  * Return: 0
  */
 void times_table(void)
@@ -25,7 +25,7 @@ void times_table(void)
 			{
 				firstDigit = firstDigit / 10;
 			}
-			if ( j != 0)
+			if (j != 0)
 			{
 			_putchar(',');
 			_putchar(' ');
@@ -43,7 +43,6 @@ void times_table(void)
 				}
 			_putchar(mult + '0');
 			}
-			
 		}
 		_putchar('\n');
 	}
