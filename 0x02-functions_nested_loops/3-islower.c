@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _islower - is lower
- * c: is a character
+ * @c: is a character
  * Return: 1
  */
 int _islower(int c)
