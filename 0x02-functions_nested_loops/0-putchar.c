@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include "main.h"
-/** 
+/**
  * main : Entry point
  * Desc : Prints putf
  * Return: 0
