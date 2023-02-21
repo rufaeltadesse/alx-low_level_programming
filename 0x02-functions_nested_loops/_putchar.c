@@ -1,5 +1,5 @@
 #include<unistd.h>
-/** main - Entry
+/** _putchar - Entry
  * Desc : prints character
  * Return: 1
  */
