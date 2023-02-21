@@ -3,7 +3,7 @@
  * print_alphabet - program entry
  * Desc - printes all alphabet
  */
-void print_alphabet (void)
+void print_alphabet(void)
 {
 	int i;
 
