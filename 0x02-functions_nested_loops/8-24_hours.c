@@ -13,7 +13,7 @@ void jack_bauer(void)
 
 	for (i = 0; i < 3; i++)
 	{
-		for(j = 0; j < 10; j++)
+		for (j = 0; j < 10; j++)
 		{
 			for (k = 0; k < 6; k++)
 			{
@@ -27,7 +27,7 @@ void jack_bauer(void)
 					_putchar('\n');
 				}
 			}
-			if (i == 2 && j==3)
+			if (i == 2 && j == 3)
 			{
 				j = 10;
 			}
