@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include "main.h"
 /**
- * main : Entry point
- * Desc : Prints putf
- * Return: 0
+ * main - check the code
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
