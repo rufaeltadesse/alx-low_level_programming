@@ -25,20 +25,25 @@ void times_table(void)
 			{
 				firstDigit = firstDigit / 10;
 			}
+			if ( j != 0)
+			{
+			_putchar(' ');
+			_putchar(',');
+			}
 			_putchar(firstDigit + '0');
 			_putchar(lastDigit + '0');
 			}
 			else
 			{
+			if (j != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(',');
+				}
 			_putchar(mult + '0');
 			}
-			if ( j != 9)
-			{
-			_putchar(',');
-			if (mult<10)
-			_putchar(' ');
-			_putchar(' ');
-			}
+			
 		}
 		_putchar('\n');
 	}
