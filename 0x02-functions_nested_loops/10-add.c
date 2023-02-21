@@ -1,7 +1,9 @@
 #include "main.h"
 /**
  * add - Entry
- * Return: 0
+ * @a: is a variable
+ * @b: is avariable
+ * * Return: 0
  */
 int add(int a, int b)
 {
