@@ -4,9 +4,9 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
-/** 
- * postitive_or_negative - Entry point
- *
+/**
+ * positive_or_negative - Entry point
+ * @n: is avariable
  * Return: Always 0 (success)
  */
 
