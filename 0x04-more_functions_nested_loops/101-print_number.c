@@ -31,5 +31,5 @@ _putchar('0');
 score = 0;
 }
 } while (score);
-
+_putchar('\n');
 }
