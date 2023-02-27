@@ -26,7 +26,7 @@ int _atoi(char *s)
 		}
 	}
 	if (count > 0 && count % 2 != 0)
-	at = -1 * atoi(s);
+	at =  0 - atoi(s);
 	else
 	at = atoi(s);
 
