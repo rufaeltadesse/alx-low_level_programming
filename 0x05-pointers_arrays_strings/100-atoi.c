@@ -11,7 +11,7 @@ int _atoi(char *s)
 	int i;
 	int j = strlen(s);
 	int at;
-	int ab = 1;
+	int count = 0;
 
 	for (i = 0; i < j; i++)
 	{
@@ -22,10 +22,13 @@ int _atoi(char *s)
 		}
 		else if (*(s + i) == '-')
 		{
-			ab = -1;
+			count++;
 		}
 	}
-	at = ab * atoi(s);
+	if (count > 0 && count % 2 != 0)
+	at = -1 * atoi(s);
+	else
+	at = atoi(s);
 
 	return (at);
 }
