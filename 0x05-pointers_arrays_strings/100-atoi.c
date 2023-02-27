@@ -10,7 +10,7 @@ int _atoi(char *s)
 {
 	int i;
 	int j = strlen(s);
-	int at;
+	signed int at = 0;
 	int count = 0;
 
 	for (i = 0; i < j; i++)
@@ -26,7 +26,7 @@ int _atoi(char *s)
 		}
 	}
 	if (count > 0 && count % 2 != 0)
-	at =  0 - atoi(s);
+	at =  -1 * atoi(s);
 	else
 	at = atoi(s);
 
