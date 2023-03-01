@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <string.h>
 /**
  * string_toupper - entery
  * @str: is a variable
@@ -7,7 +7,7 @@
  */
 char *string_toupper(char *str)
 {
-	int size = sizeof(str);
+	int size = strlen(str);
 	int i;
 
 	for (i = 0; i < size; i++)
