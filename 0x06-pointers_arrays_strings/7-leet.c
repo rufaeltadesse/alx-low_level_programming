@@ -14,6 +14,7 @@ char *leet(char *c)
 
 	char s[] = "aAeEoOtTlL";
 	char b[] = "4433007711";
+
 	for (i = 0; i < size; i++)
 	{
 		for (j = 0; j < 10; j++)
