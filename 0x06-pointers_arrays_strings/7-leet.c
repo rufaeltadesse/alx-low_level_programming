@@ -10,19 +10,16 @@ char *leet(char *c)
 {
 	int size = strlen(c);
 	int i;
-
+	int j;
+	char s[]="aAeEoOtTlL";
+	char b[]="4433007711";
 	for (i = 0; i < size; i++)
 	{
-		if (c[i] == 'a' || c[i] == 'A')
-			c[i] = '4';
-		else if (c[i] == 'e' || c[i] == 'E')
-			c[i] = '3';
-		else if (c[i] == 'o' || c[i] == 'O')
-			c[i] = '0';
-		else if (c[i] == 't' || c[i] == 'T')
-			c[i] = '7';
-		else if (c[i] == 'l' || c[i] == 'L')
-			c[i] = '1';
+		for (j = 0; j < 10; j++)
+		{
+			if (c[i] == s[j])
+				c[i] = b[j];
+		}
 	}
 	return (c);
 }
