@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * print_number - entry
  * @n: is a number
@@ -9,7 +10,7 @@ void print_number(int n)
 int div;
 int ab = n;
 if (n < 0)
-	n = n * -1;
+	n = abs(n);
 for (div = 1; div <= n; div *= 10)
 ;
 if (ab < 0)
@@ -19,7 +20,7 @@ div /= 10;
 if (div == 0)
 {
 	_putchar('0');
-	n=0;
+	n = 0;
 }
 else
 {
