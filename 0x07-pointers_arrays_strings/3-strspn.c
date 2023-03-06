@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * strspn - entry
+ * _strspn - entry
  * @s: is a variable
  * @accept: is a variable
  * Return: 0
