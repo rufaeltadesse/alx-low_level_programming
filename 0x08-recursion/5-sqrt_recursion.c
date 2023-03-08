@@ -9,7 +9,7 @@ int _sqrt_recursion(int n)
 	return (squareroot(n, 1));
 }
 /**
- * squreroot -  entry
+ * squareroot -  entry
  * @n: is a variable
  * @b: is a variable
  * Return: 0
