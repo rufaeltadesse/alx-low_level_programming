@@ -19,7 +19,7 @@ int checkprime(int n, int j)
 {
 	int value = 0;
 
-	if (j != 0 && n != -1)
+	if (j != 0 && n > 0)
 	value = n % j;
 	if (value != 0 && j < 3)
 		return (1);
