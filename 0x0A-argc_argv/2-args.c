@@ -9,9 +9,9 @@ int main(int argc, char *argv[])
 {
 int c;
 
-if (argc > 1)
+if (argc > 0)
 {
-	for (c = 1; c < argc; c++)
+	for (c = 0; c < argc; c++)
 	{
 		printf("%s\n", argv[c]);
 	}
