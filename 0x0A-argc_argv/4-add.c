@@ -19,7 +19,7 @@ if (argc > 1)
 		if (atoi(argv[c]) == 0 && strcmp(argv[c], "0") != 0)
 		{
 			printf("Error\n");
-			return (0);
+			return (1);
 		}
 		add = add + atoi(argv[c]);
 	}

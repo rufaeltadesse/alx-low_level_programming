@@ -15,17 +15,17 @@ int i;
 int n[5] = {25, 10, 5, 2, 1};
 if (argc == 2)
 {
-		if (atoi(argv[1]) < 0)
-		{
-			printf("0\n");
-			return (0);
-		}
-		else
-		{
+	if (atoi(argv[1]) < 0)
+	{
+	printf("0\n");
+	return (0);
+	}
+	else
+	{
 			values = atoi(argv[1]);
 			for (i = 0; i <= 5; i++)
 			{
-				if(values / n[i] > 0)
+				if (values / n[i] > 0)
 				{
 					coins = coins + (values / n[i]);
 					values = values % n[i];
