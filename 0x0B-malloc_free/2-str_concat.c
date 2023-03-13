@@ -15,8 +15,14 @@ char *str_concat(char *s1, char *s2)
 	int size2;
 	char *merged;
 
-	size1 = strlen(s1);
-	size2 = strlen(s2);
+	if (s1 == NULL)
+		size1 = 0;
+	else
+		size1 = strlen(s1);
+	if (s2 == NULL)
+		size2 = 0;
+	else
+		size2 = strlen(s2);
 	merged = malloc(size1 + size2 + 1);
 	if (merged == NULL)
 	{
