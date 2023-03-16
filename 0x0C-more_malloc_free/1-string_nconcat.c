@@ -28,11 +28,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	for (i = 0; i < lens1; i++)
 	{
-		constr[i] = s[i];
+		constr[i] = s1[i];
 		j++;
 	}
 	for (i = 0; i < lens2; i++)
+	{
 		constr[j] = s2[i];
+		j++;
+	}
 	return (constr);
 }
 
