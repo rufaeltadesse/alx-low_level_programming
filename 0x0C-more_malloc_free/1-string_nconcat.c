@@ -13,7 +13,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *constr;
 	unsigned int lens1 = strlen(s1);
 	unsigned int lens2 = strlen(s2);
-	unsigned int i, j = 0;
+	unsigned int i;
 
 	if (n < lens2)
 	{
@@ -29,14 +29,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; i < lens1; i++)
 	{
 		constr[i] = s1[i];
-		j++;
 	}
-	for (i = 0; i < n; i++)
+	for (; i < (lens1 + n); i++)
 	{
-		constr[j] = s2[i];
-		j++;
+		constr[i] = s2[i - lens1];
 	}
-	constr[j]= '\0';
+	constr[i]= '\0';
 	return (constr);
 }
 
