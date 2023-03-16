@@ -11,14 +11,14 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *constr;
-	unsigned int lens1;
-	unsigned int lens2;
+	unsigned int lens1 = 0;
+	unsigned int lens2 = 0;
 	unsigned int i;
 
-	while (s1 && s1[len1])
-		len1++;
-	while (s2 && s2[len2])
-		len2++;
+	while (s1 && s1[lens1])
+		lens1++;
+	while (s2 && s2[lens2])
+		lens2++;
 
 	if (n < lens2)
 	{
