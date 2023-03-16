@@ -15,6 +15,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int lens2 = 0;
 	unsigned int i;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	while (s1 && s1[lens1])
 		lens1++;
 	while (s2 && s2[lens2])
