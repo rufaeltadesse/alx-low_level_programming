@@ -19,19 +19,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (s1 && s1[lens1])
+	while (s1[lens1] != '\0')
 		lens1++;
-	while (s2 && s2[lens2])
+	while (s2 && s2[lens2] != '\0')
 		lens2++;
 
-	if (n < lens2)
+	if (n > lens2)
 	{
-		constr = malloc(sizeof(char) * (lens1 + n + 1));
+		n = lens2;
 	}
-	else
-	{
-		constr = malloc(sizeof(char) * (lens1 + lens2 + 1));
-	}
+	constr = malloc(sizeof(char) * (lens1 + n + 1));
 
 	if (!constr)
 		return (NULL);
