@@ -1,1 +1,4 @@
-#define SUM(a,b) (a) + (b)
+#ifndef SUMOFNUMBERS
+#define SUMOFNUMBERS
+#define SUM(a, b) ((a) + (b))
+#endif
