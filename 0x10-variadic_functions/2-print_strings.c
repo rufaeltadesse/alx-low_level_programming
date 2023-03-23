@@ -25,12 +25,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			if (i < n - 1 && separator != NULL)
 				printf("%s%s", stringsList, separator);
 			else
-				printf("%s\n", stringsList);
+				printf("%s", stringsList);
 		}
 		else
 		{
-			printf("(nil)\n");
+			printf("(nil)");
 			return;
 		}
 	}
+	print("\n");
+	va_end(sumList);
 }
