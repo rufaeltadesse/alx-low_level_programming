@@ -22,6 +22,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (i < n - 1)
 			printf("%d%s", sumTotal, separator);
 		else
-			printf("%d\n", sumTotal);
+			printf("%d", sumTotal);
 	}
+	printf("\n");
 }
