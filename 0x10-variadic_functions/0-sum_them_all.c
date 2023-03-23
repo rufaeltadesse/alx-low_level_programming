@@ -12,6 +12,7 @@ int sum_them_all(const unsigned int n, ...)
 	va_list sumList;
 	unsigned int i;
 	int sumTotal = 0;
+
 	if (n <= 0)
 		return (0);
 
