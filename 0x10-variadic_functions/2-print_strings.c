@@ -33,6 +33,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			return;
 		}
 	}
-	print("\n");
+	printf("\n");
 	va_end(sumList);
 }
