@@ -40,10 +40,12 @@ void print_all(const char * const format, ...)
 			case 's':
 			stringList = va_arg(allList, char *), count = 1;
 				if (!stringList)
+				{
 					printf("(nil)");
-				else
-				printf("%s", stringList);
 					break;
+				}
+				printf("%s", stringList);
+				break;
 		} i++;
 	}
 	printf("\n");
