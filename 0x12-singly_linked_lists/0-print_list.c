@@ -9,7 +9,7 @@
 size_t print_list(const list_t *h)
 {
 	const list_t *traverse = h;
-	int counter = 0;
+	size_t counter = 0;
 
 	while (traverse)
 	{
