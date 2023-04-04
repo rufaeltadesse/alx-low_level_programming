@@ -2,6 +2,7 @@
 /**
  * print_listint - main entry
  * @h: is a variable
+ * Return: size t
  */
 size_t print_listint(const listint_t *h)
 {
@@ -9,7 +10,7 @@ size_t print_listint(const listint_t *h)
 
 	while (h)
 	{
-		printf("%lu\n", h->n);
+		printf("%d\n", h->n);
 		size++;
 		h = h->next;
 	}
