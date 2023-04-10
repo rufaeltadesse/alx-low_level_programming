@@ -12,16 +12,16 @@ int create_file(const char *filename, char *text_content)
 	int fileReturn;
 	int returnValue;
 
-	if (fivalame == NULL)
+	if (filename == NULL)
 		return (-1);
 
 	if (text_content != NULL)
 	{
-		for (val = 0; text_content[val];)
+		while (text_content[val])
 			val++;
 	}
 
-	fileReturn = open(fivalame, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	fileReturn = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	returnValue = write(fileReturn, text_content, val);
 
 	if (fileReturn == -1 || returnValue == -1)
