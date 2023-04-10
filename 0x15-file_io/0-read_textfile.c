@@ -1,0 +1,28 @@
+#include "main.h"
+#include <fcntl.h>
+/**
+ * read_textfile - main entry
+ * @filename: file name of the file
+ * @letters: the letters
+ * Return: sizet
+ */
+ssize_t read_textfile(const char *filename, size_t letters)
+{
+	ssize_t fileReturn, returnValue, i;
+	char *fileOpener;
+
+	fileReturn = open(filename, O_RDONLY);
+	if (fileReturn == -1)
+		return (0);
+	fileOpener = malloc(sizeof(char) * letters);
+	if (fileOpener == NULL)
+	{
+		return (0);
+	}
+	i = read(fileReturn, fileOpener, letters);
+	returnValue = write(STDOUT_FILENO, fileOpener, i);
+
+	free(fileOpener);
+	close(fileReturn);
+	return (returnValue);
+}
