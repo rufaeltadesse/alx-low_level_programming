@@ -1,5 +1,8 @@
 #include "main.h"
 #include <fcntl.h>
+#include <unistd.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 /**
  * read_textfile - main entry
  * @filename: file name of the file
@@ -20,9 +23,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	i = read(fileReturn, fileOpener, letters);
-	returnValue = write(STDOUT_FILENO, fileOpener, i);
+	returnValue = (write(STDOUT_FILENO, fileOpener, i));
 
 	free(fileOpener);
 	close(fileReturn);
-	return (returnValue);
+	return returnValue;
 }
