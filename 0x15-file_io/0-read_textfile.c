@@ -11,7 +11,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t fileReturn, returnValue, i;
+	ssize_t fileReturn, Value, i;
 	char *fileOpener;
 
 	fileReturn = open(filename, O_RDONLY);
@@ -23,9 +23,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	i = read(fileReturn, fileOpener, letters);
-	returnValue = (write(STDOUT_FILENO, fileOpener, i));
+	Value = (write(STDOUT_FILENO, fileOpener, i));
 
 	free(fileOpener);
 	close(fileReturn);
-	return returnValue;
+	return Value;
 }

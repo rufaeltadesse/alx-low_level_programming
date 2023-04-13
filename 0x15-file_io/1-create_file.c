@@ -3,14 +3,14 @@
 /**
  * create_file - main entry
  * @filename: isa variable
- * text_content: isa variable
+ * @text_content: isa variable
  * Return: int
  */
 int create_file(const char *filename, char *text_content)
 {
 		int val = 0;
 	int fileReturn;
-	int returnValue;
+	int Value;
 
 	if (filename == NULL)
 		return (-1);
@@ -22,9 +22,9 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	fileReturn = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	returnValue = write(fileReturn, text_content, val);
+	Value = (int) (write(fileReturn, text_content, val));
 
-	if (fileReturn == -1 || returnValue == -1)
+	if (fileReturn == -1 || Value == -1)
 		return (-1);
 
 	close(fileReturn);
