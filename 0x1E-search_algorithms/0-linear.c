@@ -4,7 +4,7 @@
  * linear_search - function of linear search
  * @array: var array
  * @size: size var
- * @value: value 
+ * @value: valu
  * Return: returns int
  */
 int linear_search(int *array, size_t size, int value)
